@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+	<script>
+		function showPassword() {
+			var passwordInput = document.getElementById("password");
+			if (passwordInput.type === "password") {
+				passwordInput.type = "text";
+			} else {
+				passwordInput.type = "password";
+			}
+		}
+	</script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="login-form">
+		<h2>Login</h2>
+		<form action="login.php" method="post">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" id="password" placeholder="Password" required>
+			<label for="show-password">
+				<input type="checkbox" id="show-password" onclick="showPassword()"> Show Password
+			</label>
+			<a href="forgot_password.php">Forgot Password?</a>
+			<button type="submit" name="login-btn">Login</button>
+		</form>
+		<p>Don't have an account? <a href="signup.php">Signup here</a></p>
+		<a href="index.html">Go back to Home</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.login-form {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin: 20px auto;
+	padding: 20px;
+	max-width: 400px;
+}
+
+.login-form h2 {
+	margin-top: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.login-form button[type="submit"] {
+	background-color: #333;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	margin-top: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.login-form a {
+	color: #333;
+	text-decoration: none;
+}
+
+.login-form a:hover {
+	color: #666;
+}
